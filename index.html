@@ -1,0 +1,2198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Proposta Comercial eDRIVE GO — Operação Estruturada de 30 Dias com Contrato LTV de 3 Meses. Estrategista: Nilton Macario." />
+<meta name="author" content="Nilton Macario" />
+<meta name="theme-color" content="#0B1B2B" />
+<meta property="og:title" content="Proposta eDRIVE GO — Operação Inteligente para 35–45 Motoristas" />
+<meta property="og:description" content="R$ 13.500 de investimento. R$ 42.500+ de lucro em 30 dias. ROI 260–385%." />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="pt_BR" />
+<title>Proposta eDRIVE GO — Operação Inteligente | Nilton Macario</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+  /* =========================================================
+     DESIGN TOKENS — eDRIVE GO Executive Proposal
+     ========================================================= */
+  :root {
+    /* Brand Colors */
+    --color-navy-deep: #0B1B2B;
+    --color-navy: #122A3F;
+    --color-navy-soft: #1A3A56;
+    --color-bordeaux: #6E1F2E;
+    --color-bordeaux-light: #8B2A3D;
+    --color-gold: #C9A24C;
+    --color-gold-soft: #E0C078;
+    --color-ivory: #F4EFE6;
+    --color-ivory-soft: #FBF8F2;
+    --color-graphite: #2A2A2A;
+    --color-line: rgba(244, 239, 230, 0.12);
+    --color-line-strong: rgba(244, 239, 230, 0.24);
+
+    /* Semantic */
+    --color-bg: var(--color-navy-deep);
+    --color-bg-elevated: var(--color-navy);
+    --color-bg-card: rgba(26, 58, 86, 0.42);
+    --color-text-primary: var(--color-ivory);
+    --color-text-muted: rgba(244, 239, 230, 0.72);
+    --color-text-subtle: rgba(244, 239, 230, 0.54);
+    --color-accent: var(--color-gold);
+    --color-cta: var(--color-bordeaux);
+
+    /* Scenario semantics */
+    --color-scenario-up: #4CAF8E;
+    --color-scenario-mid: var(--color-gold);
+    --color-scenario-low: #C7686F;
+
+    /* Typography */
+    --font-display: "Libre Baskerville", "PP Museum", Georgia, "Times New Roman", serif;
+    --font-body: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    --font-mono: "SF Mono", Menlo, Consolas, monospace;
+
+    --fs-display-xl: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+    --fs-display-l: clamp(2rem, 3.2vw + 0.8rem, 3.25rem);
+    --fs-display-m: clamp(1.5rem, 2vw + 0.8rem, 2.25rem);
+    --fs-h1: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+    --fs-h2: clamp(1.375rem, 1.2vw + 0.9rem, 1.75rem);
+    --fs-h3: clamp(1.125rem, 0.6vw + 0.95rem, 1.25rem);
+    --fs-body: 1rem;
+    --fs-small: 0.875rem;
+    --fs-micro: 0.75rem;
+
+    --lh-tight: 1.1;
+    --lh-snug: 1.25;
+    --lh-base: 1.55;
+    --lh-relaxed: 1.7;
+
+    --ls-display: -0.02em;
+    --ls-h: -0.01em;
+    --ls-eyebrow: 0.18em;
+
+    /* Spacing (8pt grid) */
+    --s-1: 4px;
+    --s-2: 8px;
+    --s-3: 12px;
+    --s-4: 16px;
+    --s-5: 24px;
+    --s-6: 32px;
+    --s-7: 48px;
+    --s-8: 64px;
+    --s-9: 96px;
+    --s-10: 128px;
+
+    /* Radii */
+    --r-xs: 4px;
+    --r-sm: 8px;
+    --r-md: 12px;
+    --r-lg: 20px;
+    --r-xl: 28px;
+    --r-pill: 999px;
+
+    /* Elevation */
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.18), 0 2px 4px rgba(0,0,0,.12);
+    --shadow-md: 0 6px 14px rgba(0,0,0,.22), 0 2px 6px rgba(0,0,0,.16);
+    --shadow-lg: 0 24px 40px rgba(0,0,0,.34), 0 8px 18px rgba(0,0,0,.22);
+    --shadow-glow-gold: 0 0 0 1px rgba(201,162,76,.18), 0 12px 32px rgba(201,162,76,.18);
+    --shadow-glow-bordeaux: 0 0 0 1px rgba(110,31,46,.32), 0 14px 40px rgba(110,31,46,.38);
+
+    /* Motion */
+    --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --d-fast: 160ms;
+    --d-base: 280ms;
+    --d-slow: 520ms;
+
+    /* Layout */
+    --container: 1200px;
+    --container-narrow: 880px;
+  }
+
+  /* =========================================================
+     RESET
+     ========================================================= */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: var(--lh-base);
+    color: var(--color-text-primary);
+    background: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  img, svg { display: block; max-width: 100%; }
+  button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+  a { color: var(--color-gold); text-decoration: none; transition: color var(--d-fast) var(--ease-out); }
+  a:hover { color: var(--color-gold-soft); }
+  table { border-collapse: collapse; width: 100%; }
+  ::selection { background: var(--color-gold); color: var(--color-navy-deep); }
+
+  /* =========================================================
+     LAYOUT PRIMITIVES
+     ========================================================= */
+  .container {
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding-inline: var(--s-5);
+  }
+  .container--narrow { max-width: var(--container-narrow); }
+
+  section { padding-block: var(--s-9); position: relative; }
+  @media (max-width: 768px) { section { padding-block: var(--s-7); } }
+
+  .section-eyebrow {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: var(--fs-micro);
+    font-weight: 600;
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-gold);
+    margin-bottom: var(--s-3);
+  }
+  .section-eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 28px; height: 1px;
+    background: var(--color-gold);
+    vertical-align: middle;
+    margin-right: var(--s-3);
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: var(--fs-display-m);
+    font-weight: 700;
+    line-height: var(--lh-snug);
+    letter-spacing: var(--ls-h);
+    color: var(--color-ivory);
+    margin-bottom: var(--s-4);
+  }
+  .section-lead {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    max-width: 64ch;
+    margin-bottom: var(--s-7);
+    line-height: var(--lh-relaxed);
+  }
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-line-strong) 30%, var(--color-line-strong) 70%, transparent);
+    margin: 0;
+  }
+
+  /* =========================================================
+     HERO
+     ========================================================= */
+  .hero {
+    position: relative;
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-block: var(--s-9);
+    background:
+      radial-gradient(ellipse 80% 60% at 75% 30%, rgba(110,31,46,.28) 0%, transparent 60%),
+      radial-gradient(ellipse 70% 50% at 20% 80%, rgba(201,162,76,.10) 0%, transparent 60%),
+      linear-gradient(180deg, var(--color-navy-deep) 0%, #08151F 100%);
+  }
+  .hero__bg-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: .55;
+    pointer-events: none;
+    animation: float 12s var(--ease-in-out) infinite;
+  }
+  .hero__bg-orb--a {
+    width: 520px; height: 520px;
+    background: radial-gradient(circle, rgba(201,162,76,.32), transparent 70%);
+    top: -160px; right: -120px;
+    animation-delay: 0s;
+  }
+  .hero__bg-orb--b {
+    width: 420px; height: 420px;
+    background: radial-gradient(circle, rgba(110,31,46,.42), transparent 70%);
+    bottom: -140px; left: -100px;
+    animation-delay: -6s;
+  }
+  @keyframes float {
+    0%, 100% { transform: translate3d(0,0,0) scale(1); }
+    50% { transform: translate3d(20px,-30px,0) scale(1.06); }
+  }
+  .hero__inner { position: relative; z-index: 2; }
+  .hero__brand {
+    display: flex; align-items: center; gap: var(--s-3);
+    margin-bottom: var(--s-7);
+  }
+  .hero__brand-mark {
+    width: 36px; height: 36px;
+    border: 1px solid var(--color-gold);
+    border-radius: var(--r-sm);
+    display: grid; place-items: center;
+    color: var(--color-gold);
+    font-family: var(--font-display); font-weight: 700;
+  }
+  .hero__brand-text {
+    font-size: var(--fs-micro);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+  .hero__eyebrow {
+    font-size: var(--fs-small);
+    font-weight: 600;
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-gold);
+    margin-bottom: var(--s-5);
+    display: inline-flex; align-items: center; gap: var(--s-3);
+  }
+  .hero__eyebrow::before {
+    content: ""; width: 40px; height: 1px;
+    background: var(--color-gold);
+  }
+  .hero__title {
+    font-family: var(--font-display);
+    font-size: var(--fs-display-xl);
+    font-weight: 700;
+    line-height: var(--lh-tight);
+    letter-spacing: var(--ls-display);
+    color: var(--color-ivory);
+    margin-bottom: var(--s-5);
+    max-width: 18ch;
+  }
+  .hero__title em {
+    font-style: italic;
+    color: var(--color-gold);
+    font-weight: 400;
+  }
+  .hero__subtitle {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color-text-muted);
+    line-height: var(--lh-relaxed);
+    max-width: 60ch;
+    margin-bottom: var(--s-7);
+  }
+  .hero__meta {
+    display: flex; flex-wrap: wrap; gap: var(--s-5);
+    margin-bottom: var(--s-7);
+    padding-block: var(--s-4);
+    border-top: 1px solid var(--color-line);
+    border-bottom: 1px solid var(--color-line);
+  }
+  .hero__meta-item {
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .hero__meta-label {
+    font-size: var(--fs-micro);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-text-subtle);
+  }
+  .hero__meta-value {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--color-ivory);
+    font-weight: 700;
+  }
+  .hero__actions { display: flex; flex-wrap: wrap; gap: var(--s-4); }
+
+  /* =========================================================
+     BUTTONS — Liquid Glass + Bordeaux Morph
+     ========================================================= */
+  .cta-primary {
+    --bg: var(--color-bordeaux);
+    --bg-hover: var(--color-bordeaux-light);
+    position: relative;
+    display: inline-flex; align-items: center; gap: var(--s-3);
+    padding: 18px 32px;
+    background: var(--bg);
+    color: var(--color-ivory);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    border-radius: var(--r-pill);
+    box-shadow: var(--shadow-glow-bordeaux);
+    overflow: hidden;
+    isolation: isolate;
+    transition: transform var(--d-base) var(--ease-spring),
+                box-shadow var(--d-base) var(--ease-out),
+                background var(--d-base) var(--ease-out);
+    cursor: pointer;
+  }
+  .cta-primary::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,.22) 50%, transparent 70%);
+    transform: translateX(-120%);
+    transition: transform 700ms var(--ease-out);
+    z-index: -1;
+  }
+  .cta-primary:hover {
+    background: var(--bg-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 0 0 1px rgba(201,162,76,.42), 0 18px 50px rgba(110,31,46,.46);
+  }
+  .cta-primary:hover::before { transform: translateX(120%); }
+  .cta-primary:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+  }
+  .cta-primary:active { transform: translateY(0); }
+  .cta-primary__icon { width: 18px; height: 18px; transition: transform var(--d-base) var(--ease-out); }
+  .cta-primary:hover .cta-primary__icon { transform: translateX(4px); }
+
+  .cta-ghost {
+    display: inline-flex; align-items: center; gap: var(--s-3);
+    padding: 16px 28px;
+    color: var(--color-ivory);
+    border: 1px solid var(--color-line-strong);
+    border-radius: var(--r-pill);
+    font-weight: 500;
+    background: rgba(244,239,230,.04);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all var(--d-base) var(--ease-out);
+    cursor: pointer;
+  }
+  .cta-ghost:hover {
+    background: rgba(244,239,230,.08);
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+  }
+  .cta-ghost:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 3px; }
+
+  /* =========================================================
+     EXECUTIVE SUMMARY — Metrics Table
+     ========================================================= */
+  .summary {
+    background: linear-gradient(180deg, #08151F 0%, var(--color-navy-deep) 100%);
+  }
+  .summary__head {
+    display: flex; justify-content: space-between; align-items: end;
+    flex-wrap: wrap; gap: var(--s-5);
+    margin-bottom: var(--s-7);
+  }
+  .summary__head-left { max-width: 56ch; }
+  .summary__badge {
+    display: inline-flex; align-items: center; gap: var(--s-2);
+    padding: 6px 14px;
+    background: rgba(76,175,142,.12);
+    color: var(--color-scenario-up);
+    border: 1px solid rgba(76,175,142,.28);
+    border-radius: var(--r-pill);
+    font-size: var(--fs-micro);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .summary__badge-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--color-scenario-up);
+    box-shadow: 0 0 0 4px rgba(76,175,142,.22);
+  }
+
+  .metrics-table {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .metrics-table table { font-size: var(--fs-body); }
+  .metrics-table thead th {
+    text-align: left;
+    padding: var(--s-4) var(--s-5);
+    background: rgba(11,27,43,.6);
+    color: var(--color-gold);
+    font-size: var(--fs-micro);
+    font-weight: 600;
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-line-strong);
+  }
+  .metrics-table tbody tr {
+    transition: background var(--d-fast) var(--ease-out);
+  }
+  .metrics-table tbody tr + tr { border-top: 1px solid var(--color-line); }
+  .metrics-table tbody tr:hover { background: rgba(201,162,76,.05); }
+  .metrics-table td {
+    padding: var(--s-4) var(--s-5);
+    vertical-align: middle;
+    font-variant-numeric: tabular-nums;
+  }
+  .metrics-table td:first-child {
+    font-weight: 600;
+    color: var(--color-ivory);
+  }
+  .metrics-table td:nth-child(2) {
+    color: var(--color-gold);
+    font-family: var(--font-display);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .metrics-table td:nth-child(3) {
+    color: var(--color-text-muted);
+    font-size: var(--fs-small);
+  }
+  .metrics-table tbody tr.is-highlight td:nth-child(2) {
+    color: var(--color-scenario-up);
+    font-size: 1.125rem;
+  }
+  @media (max-width: 640px) {
+    .metrics-table thead { display: none; }
+    .metrics-table tr { display: block; padding: var(--s-4) var(--s-5); }
+    .metrics-table tr + tr { border-top: 1px solid var(--color-line); }
+    .metrics-table td { display: block; padding: 4px 0; }
+    .metrics-table td:nth-child(2) { font-size: 1.5rem; }
+  }
+
+  /* =========================================================
+     THREE FUNNELS
+     ========================================================= */
+  .funnels__grid {
+    display: grid;
+    gap: var(--s-5);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 768px) { .funnels__grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .funnels__grid { grid-template-columns: repeat(3, 1fr); } }
+
+  .funnel-card {
+    position: relative;
+    padding: var(--s-6);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--r-lg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition: transform var(--d-base) var(--ease-out),
+                border-color var(--d-base) var(--ease-out),
+                box-shadow var(--d-base) var(--ease-out);
+    display: flex; flex-direction: column;
+  }
+  .funnel-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(201,162,76,.36);
+    box-shadow: var(--shadow-glow-gold);
+  }
+  .funnel-card__num {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    color: var(--color-gold);
+    line-height: 1;
+    opacity: 0.4;
+    margin-bottom: var(--s-3);
+  }
+  .funnel-card__title {
+    font-family: var(--font-display);
+    font-size: var(--fs-h2);
+    font-weight: 700;
+    color: var(--color-ivory);
+    margin-bottom: var(--s-4);
+    line-height: var(--lh-snug);
+  }
+  .funnel-card__list { list-style: none; display: flex; flex-direction: column; gap: var(--s-3); }
+  .funnel-card__list li {
+    display: flex; gap: var(--s-3); align-items: flex-start;
+    color: var(--color-text-muted);
+    font-size: var(--fs-small);
+    line-height: var(--lh-relaxed);
+  }
+  .funnel-card__list strong { color: var(--color-ivory); font-weight: 600; }
+  .funnel-card__list .check {
+    flex: 0 0 16px;
+    width: 16px; height: 16px;
+    color: var(--color-gold);
+    margin-top: 4px;
+  }
+  .funnel-card__total {
+    margin-top: auto;
+    padding-top: var(--s-5);
+  }
+
+  .funnel-total {
+    margin-top: var(--s-7);
+    padding: var(--s-6);
+    border: 1px solid var(--color-gold);
+    border-radius: var(--r-lg);
+    background:
+      linear-gradient(135deg, rgba(201,162,76,.10), rgba(110,31,46,.10));
+    text-align: center;
+  }
+  .funnel-total__label {
+    font-size: var(--fs-micro);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-gold);
+    margin-bottom: var(--s-2);
+  }
+  .funnel-total__value {
+    font-family: var(--font-display);
+    font-size: var(--fs-display-l);
+    font-weight: 700;
+    color: var(--color-ivory);
+  }
+
+  /* =========================================================
+     FINANCIAL MODEL
+     ========================================================= */
+  .fin {
+    background: linear-gradient(180deg, var(--color-navy-deep) 0%, #08151F 50%, var(--color-navy-deep) 100%);
+  }
+  .fin-grid {
+    display: grid;
+    gap: var(--s-5);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 900px) { .fin-grid { grid-template-columns: 1.1fr 1fr; } }
+
+  .fin-table {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--r-lg);
+    padding: var(--s-6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .fin-table__title {
+    font-family: var(--font-display);
+    font-size: var(--fs-h2);
+    color: var(--color-ivory);
+    margin-bottom: var(--s-5);
+  }
+  .fin-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--s-4);
+    padding: var(--s-3) 0;
+    border-bottom: 1px solid var(--color-line);
+    align-items: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .fin-row:last-child { border-bottom: none; }
+  .fin-row__label {
+    color: var(--color-text-muted);
+    font-size: var(--fs-small);
+  }
+  .fin-row__label strong { color: var(--color-ivory); font-weight: 600; }
+  .fin-row__value {
+    color: var(--color-gold);
+    font-family: var(--font-display);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .fin-row.is-total {
+    margin-top: var(--s-3);
+    padding-top: var(--s-4);
+    border-top: 1px solid var(--color-gold);
+    border-bottom: none;
+  }
+  .fin-row.is-total .fin-row__label { color: var(--color-ivory); font-weight: 600; font-size: var(--fs-body); }
+  .fin-row.is-total .fin-row__value {
+    color: var(--color-scenario-up);
+    font-size: 1.25rem;
+  }
+  .fin-table__caption {
+    margin-top: var(--s-5);
+    padding-top: var(--s-4);
+    border-top: 1px solid var(--color-line);
+    font-size: var(--fs-micro);
+    color: var(--color-text-subtle);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* Timeline cashflow */
+  .timeline {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--r-lg);
+    padding: var(--s-6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .timeline__step {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: var(--s-4);
+    align-items: center;
+    padding: var(--s-3) 0;
+    border-bottom: 1px dashed var(--color-line);
+  }
+  .timeline__step:last-child { border-bottom: none; }
+  .timeline__day {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--color-gold);
+    font-size: var(--fs-small);
+  }
+  .timeline__desc { color: var(--color-text-muted); font-size: var(--fs-small); }
+  .timeline__amount {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .timeline__amount.is-neg { color: var(--color-scenario-low); }
+  .timeline__amount.is-pos { color: var(--color-scenario-up); }
+
+  .ltv-grid {
+    margin-top: var(--s-6);
+    display: grid;
+    gap: var(--s-4);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 768px) { .ltv-grid { grid-template-columns: repeat(3, 1fr); } }
+  .ltv-card {
+    padding: var(--s-5);
+    border: 1px solid var(--color-line);
+    border-radius: var(--r-md);
+    background: rgba(244,239,230,.03);
+  }
+  .ltv-card__month {
+    font-size: var(--fs-micro);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-gold);
+    margin-bottom: var(--s-2);
+  }
+  .ltv-card__drivers {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--color-ivory);
+    margin-bottom: var(--s-1);
+  }
+  .ltv-card__profit {
+    color: var(--color-text-muted);
+    font-size: var(--fs-small);
+  }
+
+  /* =========================================================
+     STRATEGY 30 DAYS — 4 WEEKS
+     ========================================================= */
+  .weeks {
+    display: grid;
+    gap: var(--s-5);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 768px) { .weeks { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1100px) { .weeks { grid-template-columns: repeat(4, 1fr); } }
+
+  .week-card {
+    position: relative;
+    padding: var(--s-6);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--r-lg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform var(--d-base) var(--ease-out), border-color var(--d-base) var(--ease-out);
+  }
+  .week-card:hover { transform: translateY(-4px); border-color: var(--color-gold); }
+  .week-card__index {
+    display: inline-flex; align-items: center; gap: var(--s-2);
+    font-size: var(--fs-micro);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-gold);
+    margin-bottom: var(--s-3);
+  }
+  .week-card__index::before {
+    content: ""; width: 22px; height: 1px; background: var(--color-gold);
+  }
+  .week-card__title {
+    font-family: var(--font-display);
+    font-size: var(--fs-h3);
+    color: var(--color-ivory);
+    margin-bottom: var(--s-4);
+    line-height: var(--lh-snug);
+  }
+  .week-card__list { list-style: none; display: flex; flex-direction: column; gap: var(--s-2); }
+  .week-card__list li {
+    color: var(--color-text-muted);
+    font-size: var(--fs-small);
+    padding-left: var(--s-4);
+    position: relative;
+    line-height: var(--lh-relaxed);
+  }
+  .week-card__list li::before {
+    content: "";
+    position: absolute; left: 0; top: 10px;
+    width: 6px; height: 1px;
+    background: var(--color-gold);
+  }
+  .week-card__list strong { color: var(--color-ivory); font-weight: 600; }
+  .week-card__result {
+    margin-top: var(--s-5);
+    padding-top: var(--s-4);
+    border-top: 1px solid var(--color-line);
+    font-size: var(--fs-micro);
+    color: var(--color-gold-soft);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* =========================================================
+     RESOURCES & BUDGET
+     ========================================================= */
+  .resources-grid {
+    display: grid;
+    gap: var(--s-5);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 900px) { .resources-grid { grid-template-columns: 1fr 1fr; } }
+
+  .resource-panel {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--r-lg);
+    padding: var(--s-6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .resource-panel__title {
+    font-family: var(--font-display);
+    font-size: var(--fs-h3);
+    color: var(--color-ivory);
+    margin-bottom: var(--s-4);
+  }
+  .resource-list { list-style: none; display: flex; flex-direction: column; gap: var(--s-3); }
+  .resource-list li {
+    display: flex; gap: var(--s-3); align-items: flex-start;
+    font-size: var(--fs-small);
+    color: var(--color-text-muted);
+    line-height: var(--lh-relaxed);
+  }
+  .resource-list .check {
+    flex: 0 0 18px; width: 18px; height: 18px;
+    color: var(--color-gold);
+    margin-top: 2px;
+  }
+
+  .budget-table {
+    margin-top: var(--s-6);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .budget-table thead th {
+    text-align: left;
+    padding: var(--s-4) var(--s-5);
+    background: rgba(11,27,43,.6);
+    color: var(--color-gold);
+    font-size: var(--fs-micro);
+    font-weight: 600;
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-line-strong);
+  }
+  .budget-table thead th:nth-child(2) { text-align: right; }
+  .budget-table tbody tr + tr { border-top: 1px solid var(--color-line); }
+  .budget-table tbody tr:hover { background: rgba(201,162,76,.05); }
+  .budget-table td { padding: var(--s-4) var(--s-5); font-variant-numeric: tabular-nums; }
+  .budget-table td:first-child { color: var(--color-ivory); font-weight: 500; }
+  .budget-table td:nth-child(2) { color: var(--color-gold); text-align: right; font-family: var(--font-display); font-weight: 700; }
+  .budget-table td:nth-child(3) { color: var(--color-text-muted); font-size: var(--fs-small); }
+  .budget-table tfoot td {
+    background: rgba(201,162,76,.08);
+    border-top: 1px solid var(--color-gold);
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-ivory);
+  }
+  .budget-table tfoot td:nth-child(2) {
+    color: var(--color-scenario-up);
+  }
+  @media (max-width: 640px) {
+    .budget-table thead { display: none; }
+    .budget-table tr { display: block; padding: var(--s-4) var(--s-5); }
+    .budget-table tr + tr { border-top: 1px solid var(--color-line); }
+    .budget-table td { display: block; padding: 4px 0; text-align: left !important; }
+  }
+
+  /* =========================================================
+     KPIs
+     ========================================================= */
+  .kpis-grid {
+    display: grid;
+    gap: var(--s-4);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 600px) { .kpis-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .kpis-grid { grid-template-columns: repeat(3, 1fr); } }
+
+  .metric-card {
+    padding: var(--s-5);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-line);
+    border-left: 3px solid var(--color-gold);
+    border-radius: var(--r-md);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform var(--d-base) var(--ease-out), border-color var(--d-base) var(--ease-out);
+  }
+  .metric-card:hover {
+    transform: translateY(-3px);
+    border-left-color: var(--color-gold-soft);
+    box-shadow: var(--shadow-md);
+  }
+  .metric-card__label {
+    font-size: var(--fs-micro);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-text-subtle);
+    margin-bottom: var(--s-2);
+  }
+  .metric-card__value {
+    font-family: var(--font-display);
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: var(--color-ivory);
+    margin-bottom: var(--s-2);
+    font-variant-numeric: tabular-nums;
+  }
+  .metric-card__trigger {
+    font-size: var(--fs-micro);
+    color: var(--color-scenario-low);
+    letter-spacing: 0.04em;
+  }
+  .metric-card__trigger strong { color: var(--color-ivory); }
+
+  .dashboard-strip {
+    margin-top: var(--s-6);
+    padding: var(--s-5);
+    background: linear-gradient(135deg, rgba(201,162,76,.06), rgba(110,31,46,.06));
+    border: 1px solid var(--color-line);
+    border-radius: var(--r-lg);
+    display: flex; flex-wrap: wrap; gap: var(--s-5);
+    align-items: center; justify-content: space-between;
+  }
+  .dashboard-strip__heading {
+    font-family: var(--font-display);
+    font-size: var(--fs-h3);
+    color: var(--color-ivory);
+  }
+  .dashboard-strip__list {
+    list-style: none;
+    display: flex; flex-wrap: wrap; gap: var(--s-4);
+  }
+  .dashboard-strip__list li {
+    display: inline-flex; align-items: center; gap: var(--s-2);
+    color: var(--color-text-muted);
+    font-size: var(--fs-small);
+  }
+  .dashboard-strip__list .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--color-gold);
+    box-shadow: 0 0 0 4px rgba(201,162,76,.22);
+  }
+
+  /* =========================================================
+     SCENARIOS + CONTINGENCY
+     ========================================================= */
+  .scenarios {
+    display: grid;
+    gap: var(--s-5);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 768px) { .scenarios { grid-template-columns: repeat(3, 1fr); } }
+
+  .scenario-card {
+    position: relative;
+    padding: var(--s-6);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-line);
+    border-left: 4px solid var(--scenario-color);
+    border-radius: var(--r-lg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform var(--d-base) var(--ease-out);
+  }
+  .scenario-card:hover { transform: translateY(-4px); }
+  .scenario-card--up { --scenario-color: var(--color-scenario-up); }
+  .scenario-card--mid { --scenario-color: var(--color-scenario-mid); }
+  .scenario-card--low { --scenario-color: var(--color-scenario-low); }
+
+  .scenario-card__head {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: var(--s-4);
+  }
+  .scenario-card__name {
+    font-family: var(--font-display);
+    font-size: var(--fs-h3);
+    color: var(--color-ivory);
+  }
+  .scenario-card__prob {
+    font-size: var(--fs-micro);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--scenario-color);
+    padding: 4px 10px;
+    border: 1px solid var(--scenario-color);
+    border-radius: var(--r-pill);
+  }
+  .scenario-card__stats { list-style: none; display: flex; flex-direction: column; gap: var(--s-2); }
+  .scenario-card__stats li {
+    display: flex; justify-content: space-between;
+    color: var(--color-text-muted);
+    font-size: var(--fs-small);
+    border-bottom: 1px dashed var(--color-line);
+    padding-block: 6px;
+  }
+  .scenario-card__stats li:last-child { border-bottom: none; }
+  .scenario-card__stats strong {
+    color: var(--color-ivory);
+    font-family: var(--font-display);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .mitigations {
+    margin-top: var(--s-7);
+    padding: var(--s-6);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--r-lg);
+  }
+  .mitigations__title {
+    font-family: var(--font-display);
+    font-size: var(--fs-h3);
+    color: var(--color-ivory);
+    margin-bottom: var(--s-4);
+  }
+  .mitigations__list {
+    list-style: none;
+    display: grid; gap: var(--s-3);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 768px) { .mitigations__list { grid-template-columns: repeat(2, 1fr); } }
+  .mitigations__list li {
+    display: flex; gap: var(--s-3); align-items: flex-start;
+    color: var(--color-text-muted);
+    font-size: var(--fs-small);
+    line-height: var(--lh-relaxed);
+  }
+  .mitigations__list .num {
+    flex: 0 0 28px; width: 28px; height: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--color-gold);
+    color: var(--color-gold);
+    display: grid; place-items: center;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-small);
+  }
+
+  /* =========================================================
+     CONTRACT OPTIONS
+     ========================================================= */
+  .contract {
+    background: linear-gradient(180deg, var(--color-navy-deep), #0F2235);
+  }
+  .contract__grid {
+    display: grid;
+    gap: var(--s-5);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 900px) { .contract__grid { grid-template-columns: 1fr 1fr; } }
+
+  .option-card {
+    position: relative;
+    padding: var(--s-7);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--r-xl);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    display: flex; flex-direction: column;
+  }
+  .option-card--featured {
+    border-color: var(--color-gold);
+    background:
+      linear-gradient(180deg, rgba(201,162,76,.06), rgba(110,31,46,.04)),
+      var(--color-bg-card);
+    box-shadow: var(--shadow-glow-gold);
+  }
+  .option-card__ribbon {
+    position: absolute; top: -14px; left: var(--s-6);
+    padding: 6px 14px;
+    background: var(--color-gold);
+    color: var(--color-navy-deep);
+    font-size: var(--fs-micro);
+    font-weight: 700;
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    border-radius: var(--r-pill);
+  }
+  .option-card__label {
+    font-size: var(--fs-micro);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-gold);
+    margin-bottom: var(--s-3);
+  }
+  .option-card__name {
+    font-family: var(--font-display);
+    font-size: var(--fs-h1);
+    line-height: var(--lh-snug);
+    color: var(--color-ivory);
+    margin-bottom: var(--s-3);
+  }
+  .option-card__price {
+    display: flex; align-items: baseline; gap: var(--s-2);
+    margin-bottom: var(--s-5);
+    padding-bottom: var(--s-5);
+    border-bottom: 1px solid var(--color-line);
+  }
+  .option-card__price-value {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-ivory);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .option-card__price-period {
+    font-size: var(--fs-small);
+    color: var(--color-text-muted);
+  }
+  .option-card__list { list-style: none; display: flex; flex-direction: column; gap: var(--s-3); margin-bottom: var(--s-6); flex: 1; }
+  .option-card__list li {
+    display: flex; gap: var(--s-3); align-items: flex-start;
+    color: var(--color-text-muted);
+    font-size: var(--fs-small);
+    line-height: var(--lh-relaxed);
+  }
+  .option-card__list .check {
+    flex: 0 0 18px; width: 18px; height: 18px;
+    color: var(--color-gold);
+    margin-top: 2px;
+  }
+  .option-card__footer-note {
+    margin-top: var(--s-4);
+    padding: var(--s-4);
+    border-radius: var(--r-md);
+    background: rgba(201,162,76,.08);
+    border: 1px solid rgba(201,162,76,.18);
+    font-size: var(--fs-small);
+    color: var(--color-ivory);
+    font-weight: 500;
+    line-height: var(--lh-relaxed);
+  }
+  .option-card__expected {
+    margin-bottom: var(--s-5);
+    padding: var(--s-4);
+    border-left: 3px solid var(--color-gold);
+    background: rgba(244,239,230,.03);
+    border-radius: 0 var(--r-md) var(--r-md) 0;
+  }
+  .option-card__expected-label {
+    font-size: var(--fs-micro);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-text-subtle);
+    margin-bottom: var(--s-1);
+  }
+  .option-card__expected-value {
+    font-family: var(--font-display);
+    color: var(--color-ivory);
+    font-size: 1.125rem;
+  }
+  .option-card__progression {
+    margin-bottom: var(--s-4);
+    list-style: none;
+    display: flex; flex-direction: column; gap: var(--s-2);
+  }
+  .option-card__progression li {
+    display: flex; justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--color-line);
+    font-size: var(--fs-small);
+    color: var(--color-text-muted);
+  }
+  .option-card__progression li:last-child { border-bottom: none; }
+  .option-card__progression strong {
+    color: var(--color-ivory);
+    font-family: var(--font-display);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* =========================================================
+     CTA QUOTE — Liquid Glass
+     ========================================================= */
+  .cta-quote {
+    position: relative;
+    background: linear-gradient(180deg, #08151F, var(--color-navy-deep));
+    overflow: hidden;
+  }
+  .cta-quote__glass {
+    position: relative;
+    padding: var(--s-8) var(--s-6);
+    background: rgba(244,239,230,.04);
+    border: 1px solid var(--color-line-strong);
+    border-radius: var(--r-xl);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    overflow: hidden;
+  }
+  .cta-quote__glass::before {
+    content: "";
+    position: absolute;
+    inset: -50% -10% auto auto;
+    width: 480px; height: 480px;
+    background: radial-gradient(circle, rgba(201,162,76,.22), transparent 60%);
+    filter: blur(40px);
+    pointer-events: none;
+  }
+  .cta-quote__inner { position: relative; max-width: 820px; margin: 0 auto; text-align: center; }
+  .cta-quote__mark {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    color: var(--color-gold);
+    line-height: 1;
+    opacity: 0.6;
+    margin-bottom: var(--s-4);
+  }
+  .cta-quote__lines { display: flex; flex-direction: column; gap: var(--s-4); margin-bottom: var(--s-6); }
+  .cta-quote__line {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 1.6vw + 0.8rem, 1.875rem);
+    line-height: var(--lh-snug);
+    color: var(--color-ivory);
+    font-style: italic;
+  }
+  .cta-quote__line:last-child { color: var(--color-gold); }
+  .cta-quote__actions { display: flex; gap: var(--s-4); justify-content: center; flex-wrap: wrap; }
+
+  /* =========================================================
+     NEXT STEPS
+     ========================================================= */
+  .next-steps {
+    background: var(--color-navy-deep);
+  }
+  .steps-list {
+    list-style: none;
+    counter-reset: step;
+    display: grid;
+    gap: var(--s-4);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 768px) { .steps-list { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1100px) { .steps-list { grid-template-columns: repeat(3, 1fr); } }
+
+  .steps-list li {
+    counter-increment: step;
+    position: relative;
+    padding: var(--s-5) var(--s-5) var(--s-5) calc(var(--s-7) + var(--s-3));
+    border: 1px solid var(--color-line);
+    border-radius: var(--r-md);
+    background: var(--color-bg-card);
+    color: var(--color-text-muted);
+    transition: border-color var(--d-base) var(--ease-out);
+  }
+  .steps-list li:hover { border-color: var(--color-gold); }
+  .steps-list li::before {
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    left: var(--s-5); top: var(--s-5);
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    line-height: 1;
+  }
+  .steps-list li strong { color: var(--color-ivory); display: block; margin-bottom: 4px; }
+
+  /* =========================================================
+     SIGNATURE / FOOTER
+     ========================================================= */
+  .signature {
+    padding-block: var(--s-9);
+    border-top: 1px solid var(--color-line);
+    background: #08151F;
+  }
+  .signature__grid {
+    display: grid;
+    gap: var(--s-7);
+    grid-template-columns: 1fr;
+    align-items: end;
+  }
+  @media (min-width: 768px) { .signature__grid { grid-template-columns: 1.4fr 1fr; } }
+  .signature__name {
+    font-family: var(--font-display);
+    font-size: var(--fs-display-m);
+    color: var(--color-ivory);
+    margin-bottom: var(--s-2);
+  }
+  .signature__role {
+    color: var(--color-gold);
+    font-size: var(--fs-small);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    margin-bottom: var(--s-4);
+  }
+  .signature__contact {
+    color: var(--color-text-muted);
+    font-size: var(--fs-small);
+    line-height: var(--lh-relaxed);
+  }
+  .signature__contact a { color: var(--color-gold); }
+  .signature__meta {
+    border-left: 1px solid var(--color-line);
+    padding-left: var(--s-5);
+    font-size: var(--fs-small);
+    color: var(--color-text-muted);
+    line-height: var(--lh-relaxed);
+  }
+  .signature__meta strong { color: var(--color-ivory); display: block; }
+  @media (max-width: 768px) {
+    .signature__meta { border-left: none; border-top: 1px solid var(--color-line); padding: var(--s-5) 0 0 0; }
+  }
+  .footer-bar {
+    margin-top: var(--s-7);
+    padding-top: var(--s-5);
+    border-top: 1px solid var(--color-line);
+    display: flex; flex-wrap: wrap; gap: var(--s-4); justify-content: space-between;
+    font-size: var(--fs-micro);
+    color: var(--color-text-subtle);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* =========================================================
+     ACCESSIBILITY & REDUCED MOTION
+     ========================================================= */
+  *:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+    border-radius: var(--r-xs);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* =========================================================
+     PRINT
+     ========================================================= */
+  @media print {
+    :root {
+      --color-bg: #ffffff;
+      --color-text-primary: #1a1a1a;
+      --color-text-muted: #3a3a3a;
+      --color-text-subtle: #555555;
+    }
+    body { background: #fff; color: #1a1a1a; font-size: 11pt; }
+    section { padding-block: 24pt; page-break-inside: avoid; }
+    .hero { min-height: auto; padding-block: 28pt; }
+    .hero__bg-orb, .cta-quote__glass::before { display: none !important; }
+    .funnel-card, .week-card, .scenario-card, .metric-card,
+    .option-card, .resource-panel, .timeline, .fin-table,
+    .metrics-table, .budget-table, .cta-quote__glass, .mitigations,
+    .dashboard-strip, .signature {
+      background: #fff !important;
+      color: #1a1a1a !important;
+      border: 1px solid #ccc !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      box-shadow: none !important;
+      break-inside: avoid;
+    }
+    .section-title, .funnel-card__title, .week-card__title,
+    .signature__name, .option-card__name, .fin-table__title,
+    .metric-card__value, .cta-quote__line, .hero__title {
+      color: #0B1B2B !important;
+    }
+    .section-eyebrow, .week-card__index, .option-card__label,
+    .summary__badge, .funnel-total__label, .metric-card__label,
+    .scenario-card__prob, .resource-panel__title {
+      color: #6E1F2E !important;
+    }
+    .cta-primary, .cta-ghost { display: none !important; }
+    .metrics-table thead th, .budget-table thead th {
+      background: #f4efe6 !important;
+      color: #6E1F2E !important;
+    }
+    a { color: #6E1F2E !important; text-decoration: underline; }
+    * { animation: none !important; transition: none !important; }
+    .section-divider { background: #cccccc !important; }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- =========================================================
+     HERO
+============================================================ -->
+<header class="hero" role="banner">
+  <div class="hero__bg-orb hero__bg-orb--a" aria-hidden="true"></div>
+  <div class="hero__bg-orb hero__bg-orb--b" aria-hidden="true"></div>
+
+  <div class="container hero__inner">
+    <div class="hero__brand" aria-label="eDrive Go x Nilton Macario">
+      <span class="hero__brand-mark">N</span>
+      <span class="hero__brand-text">Nilton Macario · Estrategista de Marca e Growth</span>
+    </div>
+
+    <p class="hero__eyebrow">Proposta Comercial · Confidencial · Maio 2026</p>
+
+    <h1 class="hero__title">
+      Operação inteligente para <em>35–45 motoristas</em> em 30 dias.
+    </h1>
+
+    <p class="hero__subtitle">
+      Três funéis empilhados, conteúdo com IA e automação WhatsApp. Estrutura para converter a frota da eDrive Go em receita previsível, com Contrato LTV de 3 meses como horizonte.
+    </p>
+
+    <div class="hero__meta" role="list">
+      <div class="hero__meta-item" role="listitem">
+        <span class="hero__meta-label">Para</span>
+        <span class="hero__meta-value">Lucas · Gestor de Operações eDrive Go</span>
+      </div>
+      <div class="hero__meta-item" role="listitem">
+        <span class="hero__meta-label">Por</span>
+        <span class="hero__meta-value">Nilton Macario</span>
+      </div>
+      <div class="hero__meta-item" role="listitem">
+        <span class="hero__meta-label">Status</span>
+        <span class="hero__meta-value">Pronto para Execução</span>
+      </div>
+      <div class="hero__meta-item" role="listitem">
+        <span class="hero__meta-label">Válido até</span>
+        <span class="hero__meta-value">31 de maio de 2026</span>
+      </div>
+    </div>
+
+    <div class="hero__actions">
+      <a class="cta-primary" href="#contrato" aria-label="Ver opções de contrato">
+        Aprovar e iniciar operação
+        <svg class="cta-primary__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+      <a class="cta-ghost" href="#resumo">Ver resumo executivo</a>
+    </div>
+  </div>
+</header>
+
+<!-- =========================================================
+     I. EXECUTIVE SUMMARY
+============================================================ -->
+<section id="resumo" class="summary" aria-labelledby="summary-title">
+  <div class="container">
+    <div class="summary__head">
+      <div class="summary__head-left">
+        <p class="section-eyebrow">I · Resumo Executivo</p>
+        <h2 class="section-title" id="summary-title">
+          Números que sustentam a decisão.
+        </h2>
+        <p class="section-lead">
+          Métricas conservadoras baseadas em modelo de aluguel R$ 200/dia, contrato fixo de 30 dias e payback operacional por motorista entre 10 e 15 dias.
+        </p>
+      </div>
+      <span class="summary__badge">
+        <span class="summary__badge-dot" aria-hidden="true"></span>
+        ROI projetado 260–385%
+      </span>
+    </div>
+
+    <div class="metrics-table" role="region" aria-label="Tabela de métricas do resumo executivo">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Métrica</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Justificativa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Investimento (30 dias)</td>
+            <td>R$ 13.500</td>
+            <td>Estratégia + Execução</td>
+          </tr>
+          <tr>
+            <td>Investimento (90 dias)</td>
+            <td>R$ 22.500</td>
+            <td>Contrato LTV com crescimento</td>
+          </tr>
+          <tr>
+            <td>Meta de Leads (30 dias)</td>
+            <td>600–800</td>
+            <td>Funil stacked estruturado</td>
+          </tr>
+          <tr>
+            <td>Meta de Motoristas M1 (30 dias)</td>
+            <td>35–45</td>
+            <td>Pré-aluguel de lista de espera</td>
+          </tr>
+          <tr>
+            <td>Payback Operacional</td>
+            <td>10–15 dias</td>
+            <td>Por motorista (M1)</td>
+          </tr>
+          <tr>
+            <td>Receita M1 (30 dias)</td>
+            <td>R$ 42.500–65.300</td>
+            <td>Estimativa conservadora</td>
+          </tr>
+          <tr class="is-highlight">
+            <td>ROI (30 dias)</td>
+            <td>260–385%</td>
+            <td>Baseado em modelo 3 meses</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- =========================================================
+     II. THREE FUNNELS
+============================================================ -->
+<section id="funeis" class="funnels" aria-labelledby="funnels-title">
+  <div class="container">
+    <p class="section-eyebrow">II · Estrutura Operacional</p>
+    <h2 class="section-title" id="funnels-title">
+      Três funéis empilhados para 600–800 leads.
+    </h2>
+    <p class="section-lead">
+      Cada funil cobre uma jornada de decisão diferente — ao vivo, automatizado e tráfego direto — para garantir captação contínua e qualificação em paralelo.
+    </p>
+
+    <div class="funnels__grid">
+
+      <article class="funnel-card">
+        <div class="funnel-card__num">01</div>
+        <h3 class="funnel-card__title">Webinário Gratuito Ao Vivo</h3>
+        <ul class="funnel-card__list">
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Objetivo:</strong> Capturar leads qualificados com demonstração ao vivo.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Formato:</strong> Live stream com motorista real + transparência de ganhos.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Meta:</strong> 200–300 inscritos · 65% presença · 130–195 ao vivo.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Conversão:</strong> 40–50% clicam CTA · 52–98 leads qualificados.</span>
+          </li>
+        </ul>
+      </article>
+
+      <article class="funnel-card">
+        <div class="funnel-card__num">02</div>
+        <h3 class="funnel-card__title">Webinário Gravado (Automação)</h3>
+        <ul class="funnel-card__list">
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Objetivo:</strong> Capturar quem não pode ao vivo e alimentar remarketing.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Formato:</strong> Video page + formulário + sequência WhatsApp.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Execução:</strong> Replicar o conteúdo ao vivo em 3–5 variações.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Meta:</strong> Capturar 200–300 leads da audience anterior.</span>
+          </li>
+        </ul>
+      </article>
+
+      <article class="funnel-card">
+        <div class="funnel-card__num">03</div>
+        <h3 class="funnel-card__title">Tráfego Pago + Landing Page</h3>
+        <ul class="funnel-card__list">
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Objetivo:</strong> Complementar com tráfego pago estruturado, segmentado por estados e perfis de audiência (Uber drivers, motoristas independentes).</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Plataformas:</strong> Meta Ads (Instagram/Facebook lookalike audience), Google Ads (search + display retargeting), grupos temáticos Uber por estado.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Fluxo:</strong> Anúncio segmentado → Landing page otimizada → Formulário rápido → Vídeo personalizado → Checkout/Pré-reserva.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Investimento:</strong> R$ 3.000 em tráfego estruturado (Sem 1-4) com split-testing entre criativos e públicos.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Meta:</strong> 200–400 leads qualificados via tráfego pago com CAC < R$ 300.</span>
+          </li>
+        </ul>
+      </article>
+
+    </div>
+
+    <div class="funnel-total">
+      <div class="funnel-total__label">Total de Leads · 30 Dias</div>
+      <div class="funnel-total__value">600–800 leads qualificados</div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- =========================================================
+     III. FINANCIAL MODEL
+============================================================ -->
+<section id="financeiro" class="fin" aria-labelledby="fin-title">
+  <div class="container">
+    <p class="section-eyebrow">III · Modelo Financeiro Conservador</p>
+    <h2 class="section-title" id="fin-title">
+      Estrutura de receita por motorista M1.
+    </h2>
+    <p class="section-lead">
+      Aluguel fixo de R$ 6.000/mês (R$ 200/dia × 30 dias). Seguro embutido de R$ 4.000 absorvido na operação. Pré-reserva de R$ 600 antecipa a entrada na fila.
+    </p>
+
+    <div class="fin-grid">
+
+      <div class="fin-table">
+        <h3 class="fin-table__title">Estrutura de Receita</h3>
+
+        <div class="fin-row">
+          <div class="fin-row__label"><strong>Pré-reserva</strong> · Motorista paga para entrar na fila</div>
+          <div class="fin-row__value">R$ 600</div>
+        </div>
+        <div class="fin-row">
+          <div class="fin-row__label"><strong>Aluguel Mês 1</strong> · R$ 200/dia × 30 dias</div>
+          <div class="fin-row__value">R$ 6.000</div>
+        </div>
+        <div class="fin-row">
+          <div class="fin-row__label"><strong>Seguro embutido</strong> · Custo operacional</div>
+          <div class="fin-row__value">R$ 4.000</div>
+        </div>
+        <div class="fin-row">
+          <div class="fin-row__label"><strong>Receita bruta</strong></div>
+          <div class="fin-row__value">R$ 6.000</div>
+        </div>
+        <div class="fin-row is-total">
+          <div class="fin-row__label">Lucro operacional por motorista</div>
+          <div class="fin-row__value">R$ 2.000 · 33%</div>
+        </div>
+
+        <p class="fin-table__caption">
+          Pagamento semanal R$ 1.500 já cobre o seguro mensal e inicia o lucro. Contrato mínimo de 3 meses garante amortização.
+        </p>
+      </div>
+
+      <div class="timeline" role="region" aria-label="Linha do tempo de fluxo de caixa por motorista">
+        <h3 class="fin-table__title">Fluxo de Caixa · Motorista M1</h3>
+
+        <div class="timeline__step">
+          <div class="timeline__day">Dia 1</div>
+          <div class="timeline__desc">Pré-reserva paga pelo motorista</div>
+          <div class="timeline__amount is-neg">−R$ 600</div>
+        </div>
+        <div class="timeline__step">
+          <div class="timeline__day">Dia 15</div>
+          <div class="timeline__desc">Semana 1 de aluguel · Payback atingido</div>
+          <div class="timeline__amount is-pos">+R$ 1.500</div>
+        </div>
+        <div class="timeline__step">
+          <div class="timeline__day">Dia 22</div>
+          <div class="timeline__desc">Semana 2 · Lucro acumulado R$ 1.400</div>
+          <div class="timeline__amount is-pos">+R$ 1.500</div>
+        </div>
+        <div class="timeline__step">
+          <div class="timeline__day">Dia 29</div>
+          <div class="timeline__desc">Semana 3 · Lucro acumulado R$ 2.900</div>
+          <div class="timeline__amount is-pos">+R$ 1.500</div>
+        </div>
+        <div class="timeline__step">
+          <div class="timeline__day">Dia 30</div>
+          <div class="timeline__desc">Semana 4 · Lucro acumulado R$ 4.400</div>
+          <div class="timeline__amount is-pos">+R$ 1.500</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Cenários M1 -->
+    <div class="fin-grid" style="margin-top: var(--s-6);">
+      <div class="fin-table">
+        <h3 class="fin-table__title">Cenário · 25 motoristas M1</h3>
+        <div class="fin-row"><div class="fin-row__label">Investimento (marketing)</div><div class="fin-row__value">R$ 13.500</div></div>
+        <div class="fin-row"><div class="fin-row__label">Receita bruta (25 × R$ 6.000)</div><div class="fin-row__value">R$ 150.000</div></div>
+        <div class="fin-row"><div class="fin-row__label">Custo seguro (25 × R$ 4.000)</div><div class="fin-row__value">R$ 100.000</div></div>
+        <div class="fin-row"><div class="fin-row__label">Lucro operacional</div><div class="fin-row__value">R$ 50.000</div></div>
+        <div class="fin-row is-total"><div class="fin-row__label">Lucro líquido · ROI 467%</div><div class="fin-row__value">R$ 42.500</div></div>
+      </div>
+
+      <div class="fin-table">
+        <h3 class="fin-table__title">Cenário · 35 motoristas M1</h3>
+        <div class="fin-row"><div class="fin-row__label">Investimento (marketing)</div><div class="fin-row__value">R$ 13.500</div></div>
+        <div class="fin-row"><div class="fin-row__label">Receita bruta (35 × R$ 6.000)</div><div class="fin-row__value">R$ 210.000</div></div>
+        <div class="fin-row"><div class="fin-row__label">Custo seguro (35 × R$ 4.000)</div><div class="fin-row__value">R$ 140.000</div></div>
+        <div class="fin-row"><div class="fin-row__label">Lucro operacional</div><div class="fin-row__value">R$ 70.000</div></div>
+        <div class="fin-row is-total"><div class="fin-row__label">Lucro líquido · ROI 733%</div><div class="fin-row__value">R$ 62.500</div></div>
+      </div>
+    </div>
+
+    <!-- LTV 90 days -->
+    <div style="margin-top: var(--s-7);">
+      <h3 class="fin-table__title" style="margin-bottom: var(--s-4);">Contrato LTV · Progressão 3 Meses</h3>
+      <div class="ltv-grid">
+        <div class="ltv-card">
+          <div class="ltv-card__month">Mês 1</div>
+          <div class="ltv-card__drivers">35–45 motoristas</div>
+          <div class="ltv-card__profit">Lucro R$ 42.500–62.500</div>
+        </div>
+        <div class="ltv-card">
+          <div class="ltv-card__month">Mês 2</div>
+          <div class="ltv-card__drivers">35–50 motoristas</div>
+          <div class="ltv-card__profit">Orgânico + WOM · R$ 60.000–85.000</div>
+        </div>
+        <div class="ltv-card">
+          <div class="ltv-card__month">Mês 3</div>
+          <div class="ltv-card__drivers">50–65 motoristas</div>
+          <div class="ltv-card__profit">Escala acelerada · R$ 85.000–110.000</div>
+        </div>
+      </div>
+
+      <div class="fin-table" style="margin-top: var(--s-5);">
+        <div class="fin-row"><div class="fin-row__label"><strong>Total 90 dias</strong> · Motoristas acumulados</div><div class="fin-row__value">110–150</div></div>
+        <div class="fin-row"><div class="fin-row__label">Investimento total (R$ 7.500 × 3)</div><div class="fin-row__value">R$ 22.500</div></div>
+        <div class="fin-row is-total"><div class="fin-row__label">Lucro total · ROI 733–1.044%</div><div class="fin-row__value">R$ 187.500–257.500</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- =========================================================
+     IV. STRATEGY 30 DAYS
+============================================================ -->
+<section id="estrategia" class="strategy" aria-labelledby="strategy-title">
+  <div class="container">
+    <p class="section-eyebrow">IV · Estratégia 30 Dias</p>
+    <h2 class="section-title" id="strategy-title">Execução estruturada em quatro semanas.</h2>
+    <p class="section-lead">
+      Cada semana entrega um marco mensurável: tráfego inicial, evento ao vivo, automação e conversão final em motoristas contratados.
+    </p>
+
+    <div class="weeks">
+
+      <article class="week-card">
+        <div class="week-card__index">Semana 01</div>
+        <h3 class="week-card__title">Preparação + Tráfego</h3>
+        <ul class="week-card__list">
+          <li><strong>Conteúdo:</strong> 30+ vídeos com HeyGen e atriz.</li>
+          <li><strong>Landing pages:</strong> 3 variações por audiência.</li>
+          <li><strong>Tráfego:</strong> R$ 1.500 estruturado em Meta/Google.</li>
+        </ul>
+        <div class="week-card__result">Resultado · 200–300 leads qualificados</div>
+      </article>
+
+      <article class="week-card">
+        <div class="week-card__index">Semana 02</div>
+        <h3 class="week-card__title">Webinário Ao Vivo + Escalada</h3>
+        <ul class="week-card__list">
+          <li><strong>Dia 8:</strong> Webinário 45 min com motorista real.</li>
+          <li><strong>Tópicos:</strong> Ganhos reais, estrutura, limite de 5 aluguéis/dia.</li>
+          <li><strong>Paralelo:</strong> 5 Reels/dia + Stories de motoristas.</li>
+        </ul>
+        <div class="week-card__result">Resultado · 130–195 ao vivo · 52–98 conversões</div>
+      </article>
+
+      <article class="week-card">
+        <div class="week-card__index">Semana 03</div>
+        <h3 class="week-card__title">Webinário Gravado + Automação</h3>
+        <ul class="week-card__list">
+          <li><strong>Replicação:</strong> Vídeo em 3 formatos.</li>
+          <li><strong>WhatsApp:</strong> Sequência de 7 mensagens.</li>
+          <li><strong>Tráfego:</strong> R$ 2.000 em retargeting + lookalike.</li>
+        </ul>
+        <div class="week-card__result">Resultado · 200–300 leads adicionais</div>
+      </article>
+
+      <article class="week-card">
+        <div class="week-card__index">Semana 04</div>
+        <h3 class="week-card__title">Conversão + Contatos</h3>
+        <ul class="week-card__list">
+          <li><strong>Edição:</strong> 20 vídeos/dia (atriz + HeyGen).</li>
+          <li><strong>Automação:</strong> Landing pages personalizadas por WhatsApp.</li>
+          <li><strong>Follow-up:</strong> Checkout para quem viu mas não converteu.</li>
+        </ul>
+        <div class="week-card__result">Resultado · 35–45 motoristas M1 contratados</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- =========================================================
+     V. RESOURCES & BUDGET
+============================================================ -->
+<section id="recursos" class="resources" aria-labelledby="resources-title">
+  <div class="container">
+    <p class="section-eyebrow">V · Recursos Necessários</p>
+    <h2 class="section-title" id="resources-title">Quem entrega o quê.</h2>
+    <p class="section-lead">
+      Divisão clara de responsabilidades operacionais: a eDrive Go provê acesso à frota e dados reais; Nilton entrega estratégia, conteúdo, automação e tráfego.
+    </p>
+
+    <div class="resources-grid">
+
+      <div class="resource-panel">
+        <h3 class="resource-panel__title">eDrive Go fornece</h3>
+        <ul class="resource-list">
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Contratação de pessoa para gravação em massa de vídeos.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Captura de vídeo e edição em massa.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Disponibilidade de chefe de time para filmagens e webinários.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Recursos para implementação de rastreamento inteligente.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Transporte para locais de filmagem e eventos.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="resource-panel">
+        <h3 class="resource-panel__title">Nilton fornece</h3>
+        <ul class="resource-list">
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Estratégia completa dos 3 funéis (webinário ao vivo, automação gravada, tráfego pago em grupos Uber por estado).</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Produção de 200+ vídeos com HeyGen (clones IA) e edição em massa.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Landing pages, formulários e automação WhatsApp com sequências personalizadas.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Gestor de tráfego pago dedicado da própria operação (Meta, Google, remarketing).</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Relatório semanal e dashboard em tempo real com KPIs estruturados.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Acompanhamento presencial de 12h/semana (filmagens, webinários, coordenação).</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="budget-table" role="region" aria-label="Orçamento detalhado de 30 dias">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Custo</th>
+            <th scope="col">Função</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Estratégia + Execução</td><td>R$ 7.000</td><td>Planejamento + coordenação e execução</td></tr>
+          <tr><td>HeyGen (clone IA)</td><td>R$ 800</td><td>300+ vídeos de produção</td></tr>
+          <tr><td>Atriz (10–20 vídeos/dia)</td><td>R$ 1.200</td><td>Qualidade, autenticidade e humanização de marca</td></tr>
+          <tr><td>Tráfego pago (investimento)</td><td>R$ 3.000</td><td>Amplificação estruturada e geração de leads</td></tr>
+          <tr><td>Ferramentas (WhatsApp/IA/Automação)</td><td>R$ 500</td><td>Automação 24/7 com IA e criação de funis automáticos</td></tr>
+          <tr><td>Gestor de tráfego pago</td><td>R$ 1.000</td><td>Gerenciamento profissional de tráfego da minha operação</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Total</td><td>R$ 13.500</td><td>Operação completa 30 dias</td></tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- =========================================================
+     VI. KPIs
+============================================================ -->
+<section id="kpis" class="kpis" aria-labelledby="kpis-title">
+  <div class="container">
+    <p class="section-eyebrow">VI · KPIs e Métricas de Sucesso</p>
+    <h2 class="section-title" id="kpis-title">Objetivo primário: 35–45 motoristas M1 em 30 dias.</h2>
+    <p class="section-lead">
+      Cada KPI tem meta e trigger de falha. Quando um trigger é atingido, ativa-se imediatamente o playbook de mitigação correspondente.
+    </p>
+
+    <div class="kpis-grid">
+      <div class="metric-card">
+        <div class="metric-card__label">Leads Totais</div>
+        <div class="metric-card__value">600–800</div>
+        <div class="metric-card__trigger"><strong>Trigger falha:</strong> &lt; 400</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-card__label">Motoristas M1</div>
+        <div class="metric-card__value">35–45</div>
+        <div class="metric-card__trigger"><strong>Trigger falha:</strong> &lt; 20</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-card__label">Payback (dias)</div>
+        <div class="metric-card__value">10–15</div>
+        <div class="metric-card__trigger"><strong>Trigger falha:</strong> &gt; 20</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-card__label">Lucro Operacional</div>
+        <div class="metric-card__value">R$ 42,5k–62,5k</div>
+        <div class="metric-card__trigger"><strong>Trigger falha:</strong> &lt; R$ 30k</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-card__label">Taxa de Conversão</div>
+        <div class="metric-card__value">3–5%</div>
+        <div class="metric-card__trigger"><strong>Trigger falha:</strong> &lt; 2%</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-card__label">CAC por Motorista</div>
+        <div class="metric-card__value">&lt; R$ 300</div>
+        <div class="metric-card__trigger"><strong>Trigger falha:</strong> &gt; R$ 500</div>
+      </div>
+    </div>
+
+    <div class="dashboard-strip" role="region" aria-label="Dashboard em tempo real">
+      <div class="dashboard-strip__heading">Dashboard em tempo real</div>
+      <ul class="dashboard-strip__list">
+        <li><span class="dot" aria-hidden="true"></span> Leads capturados por funil</li>
+        <li><span class="dot" aria-hidden="true"></span> Motoristas em pré-aluguel</li>
+        <li><span class="dot" aria-hidden="true"></span> Motoristas confirmados (M1)</li>
+        <li><span class="dot" aria-hidden="true"></span> Receita acumulada</li>
+        <li><span class="dot" aria-hidden="true"></span> ROI estimado</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- =========================================================
+     VII. SCENARIOS & CONTINGENCY
+============================================================ -->
+<section id="cenarios" class="contingency" aria-labelledby="contingency-title">
+  <div class="container">
+    <p class="section-eyebrow">VII · Cenários e Contingência</p>
+    <h2 class="section-title" id="contingency-title">Três cenários, mitigações prontas.</h2>
+    <p class="section-lead">
+      Cada cenário tem probabilidade explícita e plano de ação correspondente. Em caso de gargalo, o pivô é executado já na Semana 3.
+    </p>
+
+    <div class="scenarios">
+
+      <article class="scenario-card scenario-card--up">
+        <div class="scenario-card__head">
+          <div class="scenario-card__name">Otimista</div>
+          <div class="scenario-card__prob">Prob. 50%</div>
+        </div>
+        <ul class="scenario-card__stats">
+          <li><span>Motoristas M1</span><strong>35+</strong></li>
+          <li><span>Lucro estimado</span><strong>R$ 62.500+</strong></li>
+          <li><span>Próximo passo</span><strong>Extensão automática 3 meses</strong></li>
+        </ul>
+      </article>
+
+      <article class="scenario-card scenario-card--mid">
+        <div class="scenario-card__head">
+          <div class="scenario-card__name">Base</div>
+          <div class="scenario-card__prob">Prob. 40%</div>
+        </div>
+        <ul class="scenario-card__stats">
+          <li><span>Motoristas M1</span><strong>35–40</strong></li>
+          <li><span>Lucro estimado</span><strong>R$ 55.000–65.300</strong></li>
+          <li><span>Próximo passo</span><strong>Contrato 3 meses com ajustes</strong></li>
+        </ul>
+      </article>
+
+      <article class="scenario-card scenario-card--low">
+        <div class="scenario-card__head">
+          <div class="scenario-card__name">Baixo</div>
+          <div class="scenario-card__prob">Prob. 10%</div>
+        </div>
+        <ul class="scenario-card__stats">
+          <li><span>Motoristas M1</span><strong>15–20</strong></li>
+          <li><span>Lucro estimado</span><strong>R$ 25.000–33.000</strong></li>
+          <li><span>Próximo passo</span><strong>Investigar gargalo · Pivotar Sem. 3</strong></li>
+        </ul>
+      </article>
+
+    </div>
+
+    <div class="mitigations">
+      <h3 class="mitigations__title">Mitigações prontas</h3>
+      <ol class="mitigations__list">
+        <li>
+          <span class="num">1</span>
+          <span><strong>Se tráfego baixo:</strong> Adicionar R$ 1.000 de verba semanal.</span>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <span><strong>Se CTA falha:</strong> Testar 5 ofertas em paralelo.</span>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <span><strong>Se webinário falha:</strong> Aumentar tráfego pré-evento.</span>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <span><strong>Se WhatsApp não converte:</strong> Otimizar sequência com split-test.</span>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="section-divider"></div></div>
+
+<!-- =========================================================
+     VIII. CONTRACT OPTIONS
+============================================================ -->
+<section id="contrato" class="contract" aria-labelledby="contract-title">
+  <div class="container">
+    <p class="section-eyebrow">VIII · Contrato e Condições</p>
+    <h2 class="section-title" id="contract-title">Duas opções, um mesmo compromisso.</h2>
+    <p class="section-lead">
+      Comece com o teste de 30 dias para validar o modelo. Aprovado, o contrato LTV de 3 meses é ativado automaticamente.
+    </p>
+
+    <div class="contract__grid">
+
+      <article class="option-card option-card--featured">
+        <div class="option-card__ribbon">Recomendado · Começar aqui</div>
+        <div class="option-card__label">Opção A · Teste 30 Dias</div>
+        <h3 class="option-card__name">Validação inicial com upgrade automático</h3>
+
+        <div class="option-card__price">
+          <span class="option-card__price-value">R$ 13.500</span>
+          <span class="option-card__price-period">/ 30 dias</span>
+        </div>
+
+        <ul class="option-card__list">
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Estratégia dos 3 funéis completa.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Conteúdo com IA (HeyGen + atriz).</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Landing pages + automação WhatsApp.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Tráfego pago estruturado (R$ 3.000).</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Acompanhamento live 15h/semana.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Relatório semanal e dashboard em tempo real.</span>
+          </li>
+        </ul>
+
+        <div class="option-card__expected">
+          <div class="option-card__expected-label">Resultado esperado</div>
+          <div class="option-card__expected-value">35–45 motoristas M1 · R$ 42,5k–65,3k de lucro</div>
+        </div>
+
+        <div class="option-card__footer-note">
+          Se resultado ≥ 35 motoristas → upgrade automático para 3 meses por R$ 22.500 totais.
+        </div>
+      </article>
+
+      <article class="option-card">
+        <div class="option-card__label">Opção B · Contrato LTV 3 Meses</div>
+        <h3 class="option-card__name">Escalada estruturada após validação</h3>
+
+        <div class="option-card__price">
+          <span class="option-card__price-value">R$ 22.500</span>
+          <span class="option-card__price-period">/ 90 dias</span>
+        </div>
+
+        <ul class="option-card__list">
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Tudo da Opção A.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Escalabilidade garantida (35 → 65 motoristas).</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>2 webinários ao vivo + 1 presencial.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Produção de 50+ vídeos personalizados.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Programa de referral estruturado.</span>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Análise de dados e pivôs estratégicos.</span>
+          </li>
+        </ul>
+
+        <ul class="option-card__progression" aria-label="Progressão por mês">
+          <li><span>Mês 1</span><strong>35–45 motoristas</strong></li>
+          <li><span>Mês 2</span><strong>45–55 motoristas</strong></li>
+          <li><span>Mês 3</span><strong>55–70 motoristas</strong></li>
+        </ul>
+
+        <div class="option-card__footer-note">
+          Total 90 dias: 110–150 motoristas acumulados · Lucro R$ 187,5k–257,5k.
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     IX. CTA QUOTE
+============================================================ -->
+<section class="cta-quote" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-quote__glass">
+      <div class="cta-quote__inner">
+        <div class="cta-quote__mark" aria-hidden="true">&ldquo;</div>
+        <h2 class="cta-quote__line" id="cta-title">
+          eDrive Go tem a frota. Tem os motoristas. Falta a estrutura para converter.
+        </h2>
+        <div class="cta-quote__lines">
+          <p class="cta-quote__line">R$ 13.500 de investimento. R$ 42.500+ de lucro em 30 dias.</p>
+          <p class="cta-quote__line">
+            Quanto você quer estar faturando em 90 dias?
+          </p>
+        </div>
+        <div class="cta-quote__actions">
+          <a class="cta-primary" href="#contrato" aria-label="Aprovar a proposta e iniciar a operação">
+            Aprovar e começar
+            <svg class="cta-primary__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a class="cta-ghost" href="mailto:joaovictor.jhon64@gmail.com">Falar com Nilton</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     X. NEXT STEPS
+============================================================ -->
+<section id="proximos-passos" class="next-steps" aria-labelledby="next-steps-title">
+  <div class="container">
+    <p class="section-eyebrow">X · Próximos Passos</p>
+    <h2 class="section-title" id="next-steps-title">Da aprovação ao primeiro motorista contratado.</h2>
+    <p class="section-lead">Início imediato após aprovação. Cada etapa tem responsável, prazo e entregável claro.</p>
+
+    <ol class="steps-list">
+      <li><strong>Aprovação</strong>Validação formal da proposta por Lucas.</li>
+      <li><strong>Kick-off</strong>Reunião de 1h com dados operacionais reais.</li>
+      <li><strong>Semana 1</strong>Produção de conteúdo + setup de tráfego.</li>
+      <li><strong>Semana 2</strong>Webinário ao vivo com motorista real.</li>
+      <li><strong>Semana 3</strong>Escalada da automação WhatsApp.</li>
+      <li><strong>Semana 4</strong>Conversão final em motoristas M1.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- =========================================================
+     SIGNATURE
+============================================================ -->
+<footer class="signature" role="contentinfo">
+  <div class="container">
+    <div class="signature__grid">
+      <div>
+        <p class="section-eyebrow">Proposta elaborada por</p>
+        <h2 class="signature__name">Nilton Macario</h2>
+        <p class="signature__role">Estrategista de Marca e Growth</p>
+        <p class="signature__contact">
+          E-mail · <a href="mailto:joaovictor.jhon64@gmail.com">joaovictor.jhon64@gmail.com</a><br />
+          Status do documento · CONFIDENCIAL · Pronto para Execução
+        </p>
+      </div>
+      <div class="signature__meta">
+        <strong>Direcionado para</strong>
+        Lucas — Gestor de Operações eDrive Go<br /><br />
+        <strong>Foco</strong>
+        Resultados Mensuráveis · Operação Estruturada · Crescimento Progressivo<br /><br />
+        <strong>Válida até</strong>
+        31 de maio de 2026
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <span>© 2026 · Nilton Macario · Proposta eDrive Go</span>
+      <span>Documento gerado em Maio de 2026</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
